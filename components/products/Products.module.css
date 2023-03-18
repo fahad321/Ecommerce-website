@@ -1,6 +1,8 @@
 .products__heading {
   margin-bottom: 30px;
   text-align: left;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .products__navigation{
@@ -18,11 +20,13 @@
     font-family: 'Helvetica Neue';
     font-size: 16px;
     margin-right: 10px;
+    font-weight: bold;
 }
 
 .products__filter_dropdown{
     padding: 5px 10px;
     text-align: center;
+    border: 1px solid black;
 }
 
 .product__tiles {
@@ -75,12 +79,29 @@
   text-decoration: none;
 }
 
+@media (min-width: 540px) {
+  .products__container{
+    max-width: 420px;
+    margin: auto;
+  }
+}
+
 @media (min-width: 768px) {
+  .products__container{
+    max-width: 100%;
+    margin: auto;
+  }
+
   .product__tiles {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .products__heading {
+    font-size: 32px;
+  }
+  
   .product__description {
     font-size: 18px;
   }

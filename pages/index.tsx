@@ -27,8 +27,7 @@ export const getServerSideProps: GetServerSideProps<IResults> = async (context) 
   };
 
 
-const Home: NextPageWithLayout<IResults> = ( productResults: any) => {
-console.log(typeof(productResults));
+const Home: NextPageWithLayout<IResults> = ( productResults: IResults) => {
   return (
     <div>
         <Products {...productResults}/>

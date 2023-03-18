@@ -1,2 +1,7 @@
-.container {
+.layout__body{
+    min-height: 80vh;
+    padding: 10px 30px;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 20px;
 }

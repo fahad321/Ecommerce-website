@@ -11,7 +11,7 @@ const Products: React.FC<IResults> = ({ productResults }) => {
     const [list, setList] = useState(productResults);
     const [fList, setFList] = useState(productResults);
     const filterArray = fList.map((item:IProductsData) => item.type)
-        .filter((value:string, index:string, self:any) => self.indexOf(value) === index);
+        .filter((value:string, index:number, self:any) => self.indexOf(value) === index);
 
     function filterSelectedProduct(productType: string) {
         if (productType === "All") {
@@ -29,7 +29,7 @@ const Products: React.FC<IResults> = ({ productResults }) => {
     }
 
     return (
-        <div>
+        <div className={styles.products__container}>
             <h2 className={styles.products__heading}>Explore our Alcoholic Products</h2>
             <section >
                 <div className={styles.products__navigation}>
@@ -39,7 +39,7 @@ const Products: React.FC<IResults> = ({ productResults }) => {
                             <option value="All">All</option>
                             {fList !== undefined &&
                                 fList.length &&
-                                filterArray.map((item:string, index:string) => (
+                                filterArray.map((item:string, index:number) => (
                                     <option key={index} value={item}>{item}</option>
                                 ))}
                         </select>

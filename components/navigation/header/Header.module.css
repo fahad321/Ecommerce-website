@@ -1,2 +1,33 @@
-.component {
-}
+.header__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    white-space: nowrap;
+    gap: 5px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 15px;
+  }
+  .header__container::-webkit-scrollbar {
+    display: none;
+  }
+  .header__left {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .header__right {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: end;
+  }
+  .header__link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  

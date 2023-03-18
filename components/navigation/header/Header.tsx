@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AuthButton from '../../buttons/auth/AuthButton';
+import styles from './Header.module.css';
 
 export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
 
@@ -7,31 +8,16 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
   return (
     <header
       {...headerProps}
-      className={`w-full flex flex-row justify-between ${className}`}
+      className={`${styles.header__container} ${className}`}
     >
-      <div className="space-x-5 m-5">
-        <Link href="/" className="hover:underline">
-          Home
-        </Link>
-        <Link href="/card" className="hover:underline">
-          Card
-        </Link>
-        <Link href="/users" className="hover:underline">
-          Users
-        </Link>
-        <Link
-          href="https://mail.google.com/mail/u/0/?tab=rm#inbox"
-          className="hover:underline  ">
-          Gmail
-        </Link>
+      <div className={styles.header__left}>
+        <Link href="/" className={styles.header__link}>Home</Link>
+        <Link href="/card" className={styles.header__link}>Card</Link>
+        <Link href="/users" className={styles.header__link}>Users</Link>
+        <Link href="/googlesearch" className={styles.header__link}>Search</Link>
       </div>
-      <div className="space-x-5 m-5">
-        <Link href="/" className="hover:underline  ">
-          Gmail
-        </Link>
-        <Link href="/" className="hover:underline sm:inline">
-          Images
-        </Link>
+      <div className={styles.header__right}>
+        <Link href="https://mail.google.com/mail" className={styles.header__link}>Gmail</Link>
         <AuthButton />
       </div>
     </header>

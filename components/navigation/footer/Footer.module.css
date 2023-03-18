@@ -1,2 +1,27 @@
-.component {
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  white-space: nowrap;
+  gap: 15px;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+  background-color: #333;
+  padding: 15px;
+  align-items: center;
+}
+.footer__container::-webkit-scrollbar {
+  display: none;
+}
+.footer__link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.footer_link {
+  color: white;
 }
