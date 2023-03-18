@@ -1,16 +1,15 @@
-import { render, screen } from '@testing-library/react'
-import Home from '../pages/index'
+import { render, screen, waitFor } from '@testing-library/react'
+import ProductTile from '../components/products/ProductTile'
 
-describe('Home', () => {
+describe('ProductTile', () => {
   it('renders a heading', () => {
-    const { container } = render(<Home />)
+    const { container } = render(<ProductTile isSale={false} productImage="/test.png" productName='Pre Blonder Crate' price='$10' />)
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
+    const heading = screen.getAllByRole('link', {
+      name: "Pre Blonder Crate Pre Blonder Crate $10",
     })
 
-    expect(heading).toBeInTheDocument()
+    waitFor(() => expect(heading).toBeInTheDocument());
 
-    expect(container).toMatchSnapshot()
   })
 })

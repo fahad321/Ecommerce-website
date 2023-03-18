@@ -1,0 +1,62 @@
+
+.App{
+  text-align: center;
+}
+.fetch_users {
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+  }
+
+  .list_users {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .li_user {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .li_user:hover {
+    color: blue;
+  }
+
+  .nav__bar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    white-space: nowrap;
+    gap: 5px;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    background-color: #333;
+  }
+
+  .nav__bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav__bar_links {
+    cursor: pointer;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+  }
+
+
+.delete, .edit {
+    margin-left: 7px;
+  }
+
+ /*
+  label {
+    margin-left: 7px;
+  }
+*/
+

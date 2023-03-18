@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply border-0 p-2 px-6 bg-slate-100 rounded-md;
+  }
+}
+
+.btn-primary{
+  background-color: yellow;
+  color: red;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button{
+  background-color: transparent;
+  border: 1px solid purple;
+  padding: 7px;
+}
+
+input {
+  border: 1px solid purple;
+  margin: 0px 5px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}

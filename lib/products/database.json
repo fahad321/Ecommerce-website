@@ -1,0 +1,66 @@
+[
+    {
+        "index": 0,
+        "isSale": false,
+        "price": "$49.99",
+        "productImage": "https://www.agcequipment.com.au/assets/full/CC240012.jpg?20200714032308",
+        "productName": "Pure Blonde Crate",
+        "type": "Beer"
+    },
+    {
+        "index": 1,
+        "isSale": true,
+        "price": "$14.99",
+        "productImage": "https://cdn.shopify.com/s/files/1/0611/3014/6026/products/211125-Crown-Melbourne-Shopify-CellarandCo-Red-Cab-PenfoldsBin389CabShz2017-768x1060_x660.png?v=1639367461",
+        "productName": "Victoria Bitter 4x6x375ml",
+        "type": "Beer"
+    },
+    {
+        "index": 2,
+        "isSale": false,
+        "price": "$24.99",
+        "productImage": "https://www.agcequipment.com.au/assets/full/CC240012.jpg?20200714032308",
+        "productName": "Kirin Megumi 4x6x330ml",
+        "type": "Beer"
+    },
+    {
+        "index": 3,
+        "isSale": true,
+        "price": "$4.99",
+        "productImage": "https://cdn.shopify.com/s/files/1/0611/3014/6026/products/211125-Crown-Melbourne-Shopify-CellarandCo-Red-Cab-PenfoldsBin389CabShz2017-768x1060_x660.png?v=1639367461",
+        "productName": "Panhead CH Johnny Octane Can",
+        "type": "Beer"
+    },
+    {
+        "index": 4,
+        "isSale": false,
+        "price": "$25.99",
+        "productImage": "https://www.agcequipment.com.au/assets/full/CC240012.jpg?20200714032308",
+        "productName": "Aquila Spark SauvB Bottle",
+        "type": "Wine"
+    },
+    {
+        "index": 5,
+        "isSale": true,
+        "price": "$29.99",
+        "productImage": "https://cdn.shopify.com/s/files/1/0611/3014/6026/products/211125-Crown-Melbourne-Shopify-CellarandCo-Red-Cab-PenfoldsBin389CabShz2017-768x1060_x660.png?v=1639367461",
+        "productName": "Bernadino Spumante Bottle",
+        "type": "Wine"
+    },
+    {
+        "index": 6,
+        "isSale": true,
+        "price": "$69.99",
+        "productImage": "https://www.agcequipment.com.au/assets/full/CC240012.jpg?20200714032308",
+        "productName": "Grey Goose Orginal 10x12x50ml",
+        "type": "Spirits"
+    },
+    {
+        "index": 7,
+        "isSale": false,
+        "price": "$49.99",
+        "productImage": "https://cdn.shopify.com/s/files/1/0611/3014/6026/products/211125-Crown-Melbourne-Shopify-CellarandCo-Red-Cab-PenfoldsBin389CabShz2017-768x1060_x660.png?v=1639367461",
+        "productName": "Scrumpy RBerry 6x1.25L",
+        "type": "Cider"
+    }
+]
