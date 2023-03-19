@@ -10,9 +10,11 @@ export interface IResults {
 const Products: React.FC<IResults> = ({ productResults }) => {
     const [list, setList] = useState(productResults);
     const [fList, setFList] = useState(productResults);
-    const filterArray = fList.map((item:IProductsData) => item.type)
+    let filterArray;
+    if(fList && fList.length){
+     filterArray = fList.map((item:IProductsData) => item.type)
         .filter((value:string, index:number, self:any) => self.indexOf(value) === index);
-
+    }
     function filterSelectedProduct(productType: string) {
         if (productType === "All") {
             setList(fList);
