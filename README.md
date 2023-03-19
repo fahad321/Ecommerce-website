@@ -2,7 +2,7 @@
 ## installation
 Pre-req node version v16.17.0
 
-npm installl
+npm install
 npm run dev
 
 ## pages
