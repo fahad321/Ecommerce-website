@@ -1,4 +1,3 @@
-## Accenture-Test
 
 ## installation
 Pre-req node version v16.17.0
