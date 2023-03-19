@@ -9,7 +9,7 @@ export interface IResults {
 
 const Products: React.FC<IResults> = ({ productResults }) => {
     const [list, setList] = useState(productResults);
-    const [fList, setFList] = useState(productResults);
+    const fList = productResults;
     let filterArray;
     if(fList && fList.length){
      filterArray = fList.map((item:IProductsData) => item.type)
@@ -40,7 +40,7 @@ const Products: React.FC<IResults> = ({ productResults }) => {
                         <select className={styles.products__filter_dropdown} onChange={() => filterSelectedProduct(event?.target.value)}>
                             <option value="All">All</option>
                             {fList !== undefined &&
-                                fList.length &&
+                                fList.length && filterArray !== undefined && 
                                 filterArray.map((item:string, index:number) => (
                                     <option key={index} value={item}>{item}</option>
                                 ))}
